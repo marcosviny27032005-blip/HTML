@@ -1,93 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --azul-principal: #8B0000;   /* vermelho escuro */
+    --azul-escuro: #4A0000;      /* vinho bem escuro */
+    --laranja-principal: #C62828;
+    --laranja-escuro: #A61B1B;
+    --laranja-escurao: #7A1010;
+    --branco-fonte: #FFFFFF;
+}
 
-* {
+*{
     margin: 0;
-
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-
+    
 }
 
-header {
-    background-color: #167CBF;
+header{
+    background-color: var(--azul-principal);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFF;
+    color: var(--branco-fonte);
     max-width: 100vw;
     height: 10vh;
-    padding: 0 100px;
+    padding: 0 100px ;
 }
 
 #nome-logo{
     font-weight: 400;
     font-size: 25px;
-    color: rgb(105, 200, 255);
+}
+span{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--laranja-principal);
 }
 
-span{
-    font-weight: 800;
-    font-size: 25px;
-    color: #cf7c33;
-}
-ul {
+ul{
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.menu {
+.menu{
     display: inline-block;
     text-decoration: none;
-    color: #FFF;
+    color: var(--branco-fonte);
     padding: 10px 15px;
     transition: 0.3s;
     font-size: 20px;
+    font-weight: 600;
 }
 
-.menu:hover {
-    color: #167CBF;
-    background-color: rgba(130, 236, 243, 0.8);
-    border-radius: 10px;
-    border: #043e64;
-    box-shadow: 3px 3px 3px #022a45;
-    opacity: 90%;
-
+.menu:hover{
+    color:  var(--laranja-principal);
+    transform: scale(1.2); 
+    transition: 0.2s;   
+    
 }
 
 
-.banner-principal {
+.banner-principal{
     text-align: center;
-    padding: 40px 200px;
-    background-image: linear-gradient( );
-    color: #FFF;
+    padding: 40px 200px; 
+    background-image: linear-gradient( var(--azul-principal), var(--azul-escuro));
+    color: var(--branco-fonte);
     height: 35vh;
 }
 
-h1 {
+h1{
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 40px;
 }
 
-p {
-    margin-bottom: 40px;
+p{
+    margin-bottom: 70px;
     font-size: 25px;
 }
 
-#btn-ver-livros {
-    background-color: #167CBF;
+#btn-ver-livros{
+    background-color:var(--laranja-escuro);
     text-decoration: none;
-    color: #FFF;
+    color: var(--branco-fonte);
     padding: 20px 50px;
     border-radius: 10px;
+    font-weight: 600;
 }
 
-#btn-ver-livros:hover {
-    background-color: #cf7c33;
-    border: none;
+#btn-ver-livros:hover{
+    background-color: var(--laranja-principal);
+    
+}
 
+.foto-livro{
+    max-width: 15vw;
+}
+
+.grade-livros{
+    max-width: 90vw;
+    margin: 20px auto;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.area-titulo{
+    text-align: center;  
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 70px; 
+}
+
+.card-livro{
+    width: 300px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #34a6f2;
+    overflow: hidden;
+}
+
+.info-livro{
+    padding-top: 20px;
+}
+
+.btn-livro{
+    background-color: var(--laranja-principal);
+    padding: 20px 30px;
+    color: var(--branco-fonte);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-livro:hover{
+    background-color: var(--laranja-escuro);
+}
+.categoria-livro{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco-fonte);
+    background-color: var(--laranja-principal);
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+
+.titulo-livro{
+    font-size: 30px;
+    color: var(--azul-escuro);
+    padding: 20px 0;
+}
+
+.autores-livro{
+    font-size: 16px;
+    margin-bottom:15px;
 }
