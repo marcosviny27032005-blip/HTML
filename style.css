@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --azul-principal: #8B0000;   /* vermelho escuro */
-    --azul-escuro: #4A0000;      /* vinho bem escuro */
-    --laranja-principal: #C62828;
-    --laranja-escuro: #A61B1B;
-    --laranja-escurao: #7A1010;
-    --branco-fonte: #FFFFFF;
+    --azul-principal: #167CBF;
+    --azul-escuro: #003A66;
+    --laranja-principal: #F7941D;
+    --laranja-escuro: #b97829;
+    --laranja-escurao: #945014;
+    --branco-fonte: #FFFFFF
 }
 
 *{
@@ -92,22 +92,23 @@ p{
 }
 
 #btn-ver-livros:hover{
-    background-color: var(--laranja-principal);
-    
+    background-color: var(--laranja-escurao);
+    border: none;
+
 }
 
 .foto-livro{
-    max-width: 15vw;
+    width: 250px;
+    height: 280px;
 }
 
 .grade-livros{
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 20px auto;
     display: flex;
-    gap: 100px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .area-titulo{
@@ -118,47 +119,195 @@ p{
 }
 
 .card-livro{
-    width: 300px;
+    width: 12vw;
     text-align: center;
     border-radius: 6px;
-    padding: 30px;
     box-shadow: 0px 0px 10px #34a6f2;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info-livro{
-    padding-top: 20px;
+    height: 220px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .btn-livro{
     background-color: var(--laranja-principal);
-    padding: 20px 30px;
+    padding: 10px 25px;
     color: var(--branco-fonte);
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
+
 .btn-livro:hover{
-    background-color: var(--laranja-escuro);
+    background-color: var(--laranja-escurao);
 }
+
 .categoria-livro{
     font-size: 16px;
     font-weight: 400;
     color: var(--branco-fonte);
     background-color: var(--laranja-principal);
-    padding: 5px;
+    padding: 3px;
     border-radius: 15px;
-    
+    width: 50%;
 }
-
 .titulo-livro{
-    font-size: 30px;
-    color: var(--azul-escuro);
-    padding: 20px 0;
+    font-size: 1.5rem;
+    color: #004C94;
+    padding: 15px 0;
 }
 
 .autores-livro{
     font-size: 16px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
+}
+
+/* Seção como funciona */
+
+.ajuda{
+    background-image: linear-gradient( #2286c9,#0e5b96);
+    padding: 60px 20px;
+}
+
+.ajuda h2 {
+    color: var(--branco-fonte);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.todos-passos{
+    display: flex;
+    justify-content: center;
+    max-width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.passo{
+    width: 25vw;
+}
+
+.numero-passo{
+    font-size: 35px;
+    color: var(--laranja-principal);
+
+}
+
+.passo h3 {
+    font-size: 23px;
+    color: var(--branco-fonte);
+    font-weight: 600;
+}
+
+.passo p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+
+footer{
+    background-image: linear-gradient(#0e5b96, #2286c9);
+    color: #FFF;
+    padding: 10px;
+}
+
+
+.footer-container{
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-coluna p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.footer-coluna{
+    display: flex;
+    flex-direction: column;
+    min-height: 15vw;
+}
+.footer-coluna ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+}
+ a{
+    text-decoration: none;
+    color: #FFF;
+ }
+
+
+ .footer-coluna h4{
+    color: var(--laranja-principal);
+ }
+
+
+ .footer-social{
+    padding: 15px;
+ }
+
+.footer-linha{
+    max-width: 70vw;
+    margin: 20px auto;
+    border: 1px solid var(--laranja-escurao);
+}
+
+.footer-copy{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.footer-social i{
+    font-size:32px;
+}
+
+.fa-instagram{
+    color: blueviolet;
+}
+.fa-twitter{
+    color: #34a6f2;
+}
+.fa-square-linkedin{
+    color: #2b08c9;
+}
+.fa-square-linkedin:hover{
+    color: #6cc1fa;
+}
+.fa-twitter:hover{
+    color: #0524d6;
+}
+.fa-instagram:hover{
+    color: rgb(173, 54, 118);
+}
+.footer-coluna li a:hover{
+    color: #F7941D;
+    transform: scale(1.1);
+    font-weight: 600;
+
 }
