@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh; 
+}
+
+main{
+    margin: 20px auto;
+    width: 75vw;
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(13, 162, 248);
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 12px;
+    margin: 20px;
+}
+
+#caixa{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(17, 0, 255);
+    margin: 0 auto;
+    margin: 20px auto;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin-right: 10px;
+}
