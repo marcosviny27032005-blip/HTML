@@ -58,4 +58,15 @@ document.getElementById("adiciona_livro").addEventListener('click',()=>{
         novoLivro.textContent = nomeLivro.value;
         listaLivros.appendChild(novoLivro);
         nomeLivro.value = "";
+        const novoButtton = document.createElement("button")
+        novoButtton.textContent = "X"
+        novoButtton.style.marginLeft = "20px"
+        novoLivro.appendChild(novoButtton)
+        listaLivros.appendChild(novoLivro)
+        novoButtton.addEventListener('click',()=>{
+            novoLivro.remove();
+        }) 
+})
+document.getElementById("remover_livro").addEventListener('click', ()=>{
+    listaLivros.innerHTML = "";
 })

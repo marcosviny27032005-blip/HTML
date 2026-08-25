@@ -60,4 +60,26 @@ h2{
 #listaLivro{
     padding: 10px;
     gap: 10px;
+    background-color: #BA59DC;
+    color: ghostwhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#remover_livro{
+    background-color: rgb(13, 162, 248);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 8px;
+    margin: 10px;
+}
+
+#adiciona_livro{
+    background-color: rgb(13, 162, 248);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 30;
+    padding: 8px;
+    margin: 10px;
 }
