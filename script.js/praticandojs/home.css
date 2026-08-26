@@ -83,3 +83,26 @@ h2{
     padding: 8px;
     margin: 10px;
 }
+
+ul{
+    width: 400px;
+    margin: 0 auto;
+}
+
+li{
+    width: 20vw;
+    list-style: none;
+    background-color: cadetblue;
+    padding: 0 100px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_x{
+    color: crimson;
+    border: none;
+    background-color: white;
+}
+

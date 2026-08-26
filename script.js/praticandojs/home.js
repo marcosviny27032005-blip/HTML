@@ -59,6 +59,7 @@ document.getElementById("adiciona_livro").addEventListener('click',()=>{
         listaLivros.appendChild(novoLivro);
         nomeLivro.value = "";
         const novoButtton = document.createElement("button")
+        novoButtton.classList.add("btn_x")
         novoButtton.textContent = "X"
         novoButtton.style.marginLeft = "20px"
         novoLivro.appendChild(novoButtton)
