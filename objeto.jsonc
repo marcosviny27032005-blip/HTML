@@ -1,0 +1,11 @@
+/* JAVA SCRIPT OBJECT NOTATION Modelo de transferencia de objetos*/
+
+{
+    "nome" : "Marcos",
+    "Email" : "marcosviny27032005@gmail.com",
+    "usuario" : "Marcosviny",
+    "senha" : "11223344",
+    "confirmaSenha" : "11223344",
+    "idade" : 25,
+    "peso" : 85.3
+}

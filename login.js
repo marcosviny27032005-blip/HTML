@@ -18,4 +18,4 @@ document.getElementById("btn-acessar").addEventListener('click',()=>{
         msgLogin.style.color = "red"
     }
 
-})
+}) 
