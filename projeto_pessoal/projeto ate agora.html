@@ -457,7 +457,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .music-card {
             background: rgba(22, 63, 92, 0.3);
             border-radius: 20px;
@@ -928,18 +927,21 @@
             {
                 titulo: "Beija-Flor",
                 artista: "João Gomes",
-                capa: "beijaflor.mp3",
+                capa: "beija flor capa.jpg",
                 mensagem: "A música principal da nossa história. Toda vez que toca, eu lembro de você.",
                 destaque: true,
-                audioUrl: ""
+                source: "beija_flor.mp3",
+                type: "audio/mpeg"
+                
             },
             {
                 titulo: "Perfect",
                 artista: "Ed Sheeran",
-                capa: "perfect.mp3",
-                mensagem: "Porque você é perfeita pra mim, com todos os seus detalhes.",
+                capa: "ceu e mares capa.jpg",
+                mensagem: "Tem gente que anda ceus e mares para descobrir o que é o amor, mas eu apenas tenho que olhar pra você para.",
                 destaque: false,
-                audioUrl: ""
+                source: "",
+                type: ""
             },
             {
                 titulo: "Yellow",
@@ -947,7 +949,8 @@
                 capa: "yellow.mp3",
                 mensagem: "Olhe para as estrelas, veja como elas brilham por você.",
                 destaque: false,
-                audioUrl: ""
+                source: "",
+                type: ""
             }
         ];
 
@@ -1223,5 +1226,9 @@
             }
         }
     </script>
+    <audio id="testeMusica" controls>
+    <source src="beija_flor.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
 </body>
 </html>
